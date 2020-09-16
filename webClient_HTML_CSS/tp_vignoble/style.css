@@ -1,84 +1,143 @@
 body {
     background-color: dimgrey;
-    overflow: hidden;
+    overflow-y: scroll;
     height: 100%;
 }
 
 #fenetrePrincipale {
-    margin-top: 10%;
-    position: absolute;
-    height: 80%;
-    overflow-y: scroll;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    z-index: 1;
+    background-color: grey;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 nav {
-    top: 2%;
     position: fixed;
+    z-index: 2;
+
     width: 100%;
-    height: 15%;
-
+    height: 10%;
     background-color: black;
-    text-align: right;
 
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
 }
 
-ul {
-    margin-right: 5%
+
+ul#listenavprincipale {
+    float: right;
+    width: 50%;
+    text-align: center;
 }
 
-li {
+
+li.listenav {
     display: inline-block;
+    vertical-align: top;
     padding-left: 2%;
+    list-style: none;
 }
 
-a {
+a.sousnav {
+    display: block;
     color: white;
-    font-size: 1.5em;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+    padding: 5%;
+}
+
+
+li.souslistenav {
+    visibility: hidden;
+    list-style: none;
+}
+
+ul#listesousnav {
+    width: 80%;
+}
+
+ul#listesousnav:hover li.souslistenav {
+    visibility: visible;
+}
+
+
+
+a.nav:hover {
+    color: indianred;
+}
+
+
+a.section {
+    background: darkgray;
+    color: white;
+    padding: 1%;
+}
+
+
+a.nav {
+    text-decoration-line: none;
+    color: white;
+    font-size: 1.2em;
     font-family: cursive;
 }
 
+
 figure {
-    position: relative;
+    margin-top: 5%;
     padding: 2%;
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: darkgray;
 }
+
 
 img {
-    width: 100%;
+    width: 96%;
 }
 
+
 figcaption {
-    margin-top: 2%;
+    margin-top: 0.5%;
     text-align: center;
-    padding: 1%;
     background-color: white;
+    width: 94%;
+    padding: 1%;
+    font-size: 1.5em;
+    color: indianred;
 }
 
 #sections {
     text-align: center;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
+    width: 100%;
 
 }
 
 .articles {
-
     display: inline-block;
+    padding: 2%;
 }
 
-#article1 {
-    max-width: 35%;
+#article1,
+#article2,
+#article3 {
+    vertical-align: top;
+}
+
+#article1,
+#article3 {
+    max-width: 30%;
 }
 
 #article2 {
     width: 25%;
 }
 
-#article3 {
-    max-width: 35%;
+h1 {
+    color: white;
 }

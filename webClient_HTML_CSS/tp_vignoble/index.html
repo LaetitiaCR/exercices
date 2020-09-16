@@ -8,55 +8,64 @@
 </head>
 
 <body>
-    
+
     <header>
         <nav>
-            <ul>
-                <li> <a href="acceuil.html">Accueil</a></li>
-                <li> <a href="HTML 5"> HTML 5 </a></li>
-                <li> <a href="CSS 3"> CSS 3 </a></li>
-                <li> <a href="Applications">Applications </a></li>
-                <li> <a href="Contact">Contact</a></li>
+            <ul id="listenavprincipale">
+                <li class="listenav"> <a class="nav" href="acceuil.html">Accueil</a></li>
+                <li class="listenav"> <a class="nav" href="HTML 5"> HTML 5 </a></li>
+                <li class="listenav"> <a id="liencss" class="nav" href="CSS 3"> CSS 3 </a>
+                    <ul id="listesousnav">
+                        <li class="souslistenav"><a class="sousnav" href="#">Introduction</a></li>
+                        <li class="souslistenav"><a class="sousnav" href="#">Background</a></li>
+                        <li class="souslistenav"><a class="sousnav" href="#">Bordure</a></li>
+                        <li class="souslistenav"><a class="sousnav" href="#">Texte</a></li>
+                        <li class="souslistenav"><a class="sousnav" href="#">Transformation</a></li>
+                    </ul>
+                </li>
+                <li class="listenav"> <a class="nav" href="Applications">Applications </a></li>
+                <li class="listenav"> <a class="nav" href="Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-<div id="fenetrePrincipale">
-    <figure id="figure">
-        <img id="imgPrincipaleRaisin" src="imgVignoble/raisin.jpg" />
-        <figcaption>Sequi nescique quisququi dolertalorem</figcaption>
-    </figure>
 
-    <section id="sections">
-        <section id="article1" class="articles">
-            <article>
-                <h1>La Cave</h1>
-                <p>ARchitecto beatoe naseatluiase undeomr moisosacuse ntiurne uede earsteced icexphcaboenemin ipsomesros vederut oditout fusised quia.</p>
-                <a href="#">Lire la suite</a>
-            </article>
+
+    <div id="fenetrePrincipale">
+
+        <figure id="figure">
+            <img id="imgPrincipaleRaisin" src="imgVignoble/raisin.jpg" />
+            <figcaption>Sequi nescique quisququi dolertalorem</figcaption>
+        </figure>
+
+        <section id="sections">
+            <section id="article1" class="articles">
+                <article>
+                    <h1>La Cave</h1>
+                    <p>ARchitecto beatoe naseatluiase undeomr moisosacuse ntiurne uede earsteced icexphcaboenemin ipsomesros vederut oditout fusised quia.</p>
+                    <a class="section" href="#">Lire la suite</a>
+                </article>
+            </section>
+
+            <section id="article2" class="articles">
+                <article>
+                    <h1>Le Viguerou</h1>
+                    <p>Kertya beatoccrspaciat keruiasere unomasler miase lerosacntium reuedegasr earstecked icta siemo enim ipsames ler au ptaquie voper natuer.</p>
+                    <a class="section" href="#">Lire la suite</a>
+                </article>
+            </section>
+            <section id="article3" class="articles">
+                <article>
+                    <h1>Les Produits</h1>
+                    <p>Beoseoer spacial keruiasses undmasle lerosac centium reuede asesa earstecked ietsu expeabomo enimp somera lertose eluptquia voluptait.</p>
+                    <a class="section" href="#">Lire la suite</a>
+                </article>
+            </section>
         </section>
 
-        <section id="article2" class="articles">
-            <article>
-                <h1>Le Viguerou</h1>
-                <p>Kertya beatoccrspaciat keruiasere unomasler miase lerosacntium reuedegasr earstecked icta siemo enim ipsames ler au ptaquie voper natuer.</p>
-                <a href="#">Lire la suite</a>
-            </article>
-        </section>
-        <section id="article3" class="articles">
-            <article>
-                <h1>Les Produits</h1>
-                <p>Beoseoer spacial keruiasses undmasle lerosac centium reuede asesa earstecked ietsu expeabomo enimp somera lertose eluptquia voluptait.</p>
-                <a href="#">Lire la suite</a>
-            </article>
-        </section>
-    </section>
-    
-  
-        </div>  
+    </div>
+
     <footer>
     </footer>
 
-</body>
-
-</html>
+</body></html>
