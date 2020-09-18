@@ -1,14 +1,27 @@
+@font-face {
+    font-family: 'channel-regular';
+    src: url('fonts/channel-webfont.woff');
+    src: url('fonts/channel-webfont.svg#channel-regular')format('svg');
+    src: url('fonts/channel-webfont.ttf')format('truetype');
+}
+
 body {
-    background-color: dimgrey;
+    background-color: rgba(42, 40, 38, 0.8);
     overflow-y: scroll;
     height: 100%;
+    background-image: url("images/bg_motif.gif");
+    background-repeat: repeat;
+}
+
+article {
+    font-family: 'channel-regular';
 }
 
 #fenetrePrincipale {
     padding-top: 2%;
     padding-bottom: 2%;
     z-index: 1;
-    background-color: grey;
+    background-color: rgba(65, 63, 61, 1);
     width: 60%;
     margin-right: auto;
     margin-left: auto;
@@ -40,11 +53,14 @@ li.listenav {
     vertical-align: top;
     padding-left: 2%;
     list-style: none;
+    font-size: 0.8em;
+    font-family: 'channel-regular';
 }
 
 a.sousnav {
     display: block;
     color: white;
+    background-color: rgba(128, 128, 128, 0.8);
     border-color: white;
     border-style: solid;
     border-width: 1px;
@@ -56,6 +72,7 @@ a.sousnav {
 li.souslistenav {
     visibility: hidden;
     list-style: none;
+
 }
 
 ul#listesousnav {
@@ -115,7 +132,6 @@ figcaption {
 #sections {
     text-align: center;
     width: 100%;
-
 }
 
 .articles {
@@ -127,6 +143,7 @@ figcaption {
 #article2,
 #article3 {
     vertical-align: top;
+    margin-top: 0%;
 }
 
 #article1,
